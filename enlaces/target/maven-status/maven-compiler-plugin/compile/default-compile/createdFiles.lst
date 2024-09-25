@@ -1,0 +1,16 @@
+com\enlaces\enlaces\EnlacesApplication.class
+com\enlaces\enlaces\model\Enlace.class
+com\enlaces\enlaces\dto\CategoriaDto.class
+com\enlaces\enlaces\dto\EnlaceDto.class
+com\enlaces\enlaces\model\Categoria.class
+com\enlaces\enlaces\controller\EnlaceController.class
+com\enlaces\enlaces\repository\EnlaceRepository.class
+com\enlaces\enlaces\configuration\WebConfig.class
+com\enlaces\enlaces\controller\CategoriaController.class
+com\enlaces\enlaces\repository\CategoriaRepository.class
+com\enlaces\enlaces\service\EnlaceService.class
+com\enlaces\enlaces\service\impl\EnlaceServiceImpl.class
+com\enlaces\enlaces\configuration\WebConfig$1.class
+com\enlaces\enlaces\service\CategoriaService.class
+com\enlaces\enlaces\service\impl\CategoriaServiceImpl.class
+com\enlaces\enlaces\controller\FileUploadController.class

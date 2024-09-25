@@ -1,0 +1,15 @@
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\configuration\WebConfig.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\controller\CategoriaController.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\controller\EnlaceController.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\controller\FileUploadController.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\dto\CategoriaDto.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\dto\EnlaceDto.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\EnlacesApplication.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\model\Categoria.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\model\Enlace.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\repository\CategoriaRepository.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\repository\EnlaceRepository.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\service\CategoriaService.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\service\EnlaceService.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\service\impl\CategoriaServiceImpl.java
+C:\proyecto_enlaces\enlaces\src\main\java\com\enlaces\enlaces\service\impl\EnlaceServiceImpl.java
