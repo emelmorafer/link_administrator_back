@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: app_enlaces
+    env: docker
+    dockerfilePath: ./enlaces/Dockerfile
+    healthCheckPath: /
+    plan: free
+    envVars:
+      - key: DB_URL
+        value: jdbc:mysql://enlacedata_server:3306/enlacedata?createDatabaseIfNotExist=true&serverTimezone=UTC
+      - key: DB_USER_NAME
+        value: root
+      - key: DB_PASSWORD
+        value: root
+      - key: FRONTEND_URL
+        value: http://localhost:5173
+    ports:
+      - 8080
+
+databases:
+  - name: enlacedata_server
+    image: mysql:8.0.33
+    plan: free
+    envVars:
+      - key: MYSQL_ROOT_PASSWORD
+        value: root
+      - key: MYSQL_PASSWORD
+        value: root
+      - key: MYSQL_DATABASE
+        value: enlacedata
