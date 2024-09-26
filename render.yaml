@@ -28,3 +28,5 @@ databases:
         value: root
       - key: MYSQL_DATABASE
         value: enlacedata
+    ports:
+      - 3306
