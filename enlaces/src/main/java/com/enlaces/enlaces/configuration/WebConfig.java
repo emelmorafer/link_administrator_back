@@ -26,7 +26,7 @@ public class WebConfig implements WebMvcConfigurer {
                 if (frontendUrl == null || frontendUrl.isEmpty()) {
                     frontendUrl = "http://localhost:5173"; // Default Value
                 }
-                registry.addMapping("/uploadLogo")
+                registry.addMapping("/**")
                         .allowedOrigins(frontendUrl)
                         .allowedMethods("GET", "POST", "PUT", "DELETE");
             }
