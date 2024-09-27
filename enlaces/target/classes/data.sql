@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS enlace (
 );
 
 
--- Estas 2 sentencias insertan los registros solo si no existen registros con el mismo nombre en la tabla categoria.
+-- Estas 3 sentencias insertan los registros solo si no existen registros con el mismo nombre en la tabla categoria.
 
 INSERT INTO categoria (nombre, descripcion, creationdate)
 SELECT
@@ -30,9 +30,17 @@ WHERE NOT EXISTS (SELECT 1 FROM categoria WHERE nombre = 'Youtuber Cinefilos');
 INSERT INTO categoria (nombre, descripcion, creationdate)
 SELECT
 'Youtuber Politicos',
-'Es un creador de contenido en la plataforma YouTube que se enfoca en temas relacionados con la política. Su contenido abarca una amplia gama de tópicos políticos.',
+'Estos YouTubers producen videos que cubren una amplia variedad de aspectos deportivos, incluyendo noticias, análisis, comentarios, tutoriales y contenido entretenido relacionado con diferentes disciplinas deportivas.',
 '2024-09-23 14:00:00'
 WHERE NOT EXISTS (SELECT 1 FROM categoria WHERE nombre = 'Youtuber Politicos');
+
+
+INSERT INTO categoria (nombre, descripcion, creationdate)
+SELECT
+'Youtuber Deportivos',
+'Es un creador de contenido en la plataforma YouTube que se especializa en temas relacionados con el deporte.',
+'2024-09-23 14:00:00'
+WHERE NOT EXISTS (SELECT 1 FROM categoria WHERE nombre = 'Youtuber Deportivos');
 
 
 

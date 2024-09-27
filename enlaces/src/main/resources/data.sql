@@ -30,7 +30,7 @@ WHERE NOT EXISTS (SELECT 1 FROM categoria WHERE nombre = 'Youtuber Cinefilos');
 INSERT INTO categoria (nombre, descripcion, creationdate)
 SELECT
 'Youtuber Politicos',
-'Es un creador de contenido en la plataforma YouTube que se enfoca en temas relacionados con la política. Su contenido abarca una amplia gama de tópicos políticos.',
+'Estos YouTubers producen videos que cubren una amplia variedad de aspectos deportivos, incluyendo noticias, análisis, comentarios, tutoriales y contenido entretenido relacionado con diferentes disciplinas deportivas.',
 '2024-09-23 14:00:00'
 WHERE NOT EXISTS (SELECT 1 FROM categoria WHERE nombre = 'Youtuber Politicos');
 
