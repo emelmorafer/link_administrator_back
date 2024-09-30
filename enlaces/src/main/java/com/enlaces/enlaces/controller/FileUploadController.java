@@ -1,5 +1,6 @@
 package com.enlaces.enlaces.controller;
 
+import com.enlaces.enlaces.util.Utils;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -13,14 +14,14 @@ import java.nio.file.Paths;
 @RequestMapping("/uploadLogo")
 public class FileUploadController {
 
-    private static final String UPLOAD_DIR = System.getProperty("user.dir") + "/src/images/logolink/";
+    private static final String IMAGES_DIR = Utils.getParentDir(System.getProperty("user.dir")) + "/imagesupload/";
 
     @PostMapping
     public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file,
                                              @RequestParam("fileName") String fileName) {
         try {
             // Create the directory if it doesn't exist
-            Path uploadPath = Paths.get(UPLOAD_DIR);
+            Path uploadPath = Paths.get(IMAGES_DIR);
             if (!Files.exists(uploadPath)) {
                 Files.createDirectories(uploadPath);
             }
@@ -42,7 +43,7 @@ public class FileUploadController {
     @DeleteMapping
     public boolean deleteFile(@RequestParam("fileName") String fileName) {
         try {
-            Path filePath = Paths.get(UPLOAD_DIR).resolve(fileName);
+            Path filePath = Paths.get(IMAGES_DIR).resolve(fileName);
 
             // Check if the file exists
             if (Files.exists(filePath)) {

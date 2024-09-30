@@ -2,6 +2,7 @@ com\enlaces\enlaces\EnlacesApplication.class
 com\enlaces\enlaces\model\Enlace.class
 com\enlaces\enlaces\dto\CategoriaDto.class
 com\enlaces\enlaces\dto\EnlaceDto.class
+com\enlaces\enlaces\util\Utils.class
 com\enlaces\enlaces\model\Categoria.class
 com\enlaces\enlaces\controller\EnlaceController.class
 com\enlaces\enlaces\repository\EnlaceRepository.class
