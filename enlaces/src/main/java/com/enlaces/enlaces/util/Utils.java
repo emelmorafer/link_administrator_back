@@ -10,4 +10,20 @@ public class Utils {
         Path parentPath = currentPath.getParent();
         return parentPath.toString();
     }
+
+    public static String getFileExtension(String fileName) {
+        if (fileName == null || fileName.lastIndexOf(".") == -1) {
+            return "";
+        }
+        return fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase();
+    }
+
+    public static boolean isAllowedExtension(String fileExtension, String[] allowedExtensionsList) {
+        for (String allowedExtension : allowedExtensionsList) {
+            if (allowedExtension.equalsIgnoreCase(fileExtension)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
